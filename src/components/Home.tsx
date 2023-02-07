@@ -30,7 +30,6 @@ const Home = () => {
       <div className="content">
         <GameGenreList />
         <GameListView/>
-        {/* {isAGameSelected ? <Card /> : <GameListView />} */}
       </div>
       <Footer />
     </div>

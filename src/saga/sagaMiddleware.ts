@@ -3,7 +3,7 @@ import { saveAllVideogames, SagaSaveGameInformation } from "../redux/slice";
 import { GameInformation } from "../redux/slice"
 
 const api = "https://api.rawg.io/api/";
-const key = "?key=0145b1d4cc9e43109418b8dffd38659d";
+const key = "?key=";
 
 
 

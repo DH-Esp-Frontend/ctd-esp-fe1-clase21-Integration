@@ -1,7 +1,7 @@
 import { createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 
 const api = "https://api.rawg.io/api/";
-const key = "?key=0145b1d4cc9e43109418b8dffd38659d";
+const key = "?key=";
 
 
 export const saveAllGenres = createAsyncThunk("videogames/saveAllGenres", async () => {
