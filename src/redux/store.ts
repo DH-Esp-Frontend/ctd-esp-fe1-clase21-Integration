@@ -1,15 +1,17 @@
-import { configureStore } from "@reduxjs/toolkit";
-import pokemonsSlice from "./slice";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import videogamesSlice from "./slice";
 import createSagaMiddleware from "redux-saga";
-//import
+import { sagas } from "../saga/sagaMiddleware";
+// import thunk from "redux-thunk"
 
 const sagaMiddleware = createSagaMiddleware();
 const store = configureStore({
-  reducer: pokemonsSlice,
-  middleware:[sagaMiddleware]
+  reducer: videogamesSlice,
+  // middleware: [...getDefaultMiddleware(),sagaMiddleware],
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware),
 });
 
-//sagaMiddleware.run(---)
+sagaMiddleware.run(sagas)
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 export default store;

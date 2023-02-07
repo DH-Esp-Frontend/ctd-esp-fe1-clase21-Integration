@@ -11,3 +11,189 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --cardWidth: 140px;
+  --cardHeight: 100%;
+  --cardMargin: 16px;
+  --boderRadius:8px;
+}
+
+
+.card{
+width: var(--cardWidth);
+max-height: var(--cardHeight);
+margin: var(--cardMargin);
+border: 1px solid #ccc;
+border-radius: var(--borderRadius);
+background: #fff;
+box-sizing: border-box;
+transform: translateY(10%);
+transition: .2s ease-in-out;
+cursor: pointer;
+}
+.card:hover{
+transform: translateY(0);
+}
+.p-card{
+color: black;
+}
+img{
+width: 100%;
+border-radius: var(--borderRadius);
+}
+
+/* GAME LIST VIEW*/
+.section-cards{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+/* HOME */
+.content{
+display: flex;
+min-width: 600px;
+width: 100%;
+}
+/* CARD GENRE*/
+.container-genres{
+display: flex;
+justify-content: center;
+}
+.genre-description{
+font-size: 12px;
+background: #4d4f51d4;
+width: 30%;
+color: rgb(219, 205, 205);
+padding: 20px;
+margin: 20px;
+border-radius: var(--borderRadius);
+font-size: small;
+}  
+
+.img-genre{
+width: 50%;
+box-shadow: 1px 1px 7px 3px;
+}
+
+
+/* CARD GENRE LIST */
+.container-genre{
+padding: 0px 32px 32px 32px;
+border-right: 3px solid red;
+}
+.button-back{
+display: flex;
+align-items: center;
+border-radius: var(--borderRadius);
+padding: 10px;
+background-color: #8080e459;
+color: #ccc;
+}
+ul{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+li{
+cursor: pointer;
+}
+.genre{
+font-size:x-small;
+cursor: pointer;
+}
+.genre:hover{
+color: #f3ff0b;
+}
+
+/* SEARCH */
+.container-search{
+padding: 15PX;
+display: flex;
+justify-content: space-between;
+}
+.img-icon{
+width: 60px;
+padding-left: 30px;
+}
+.searchGame{
+display: flex;
+}
+.input-search{
+width: 500px;
+padding: 10px;
+border-radius: var(--borderRadius);
+height: 25px;
+}
+
+.button-seach{
+padding: 7px;
+border-radius: var(--borderRadius);
+border: none;
+background-color: #8080e459;
+margin-left: 5px;
+}
+.button-seach:hover{
+background-color: #4343d9fb;
+transition: .5s;
+}
+/*/- CARD*/
+.container-game{
+min-width: 900px;
+}
+.container-description{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.game-card{
+font-size: small;
+width: 50%;
+position: absolute;
+background: #4d4f51d4;
+padding: 25px;
+border-radius: var(--borderRadius);
+}
+/*/- HOME */
+
+
+h2{
+background: #34373a6e;
+display: inline-block;
+padding: 10px;
+border-radius: var(--borderRadius);
+}
+.button-back:hover{
+background-color: #4343d9fb;
+transition: .5s;
+}
+
+.container-paginate{
+display: flex;
+justify-content: center;
+padding-top: 15px;
+}
+.button-prev{
+padding-right: 10px;
+ margin-right: 30px;
+}
+.button-next{
+  padding-left: 10px;
+  margin-left: 30px;
+}
+.section-cards{
+min-width: 950px;
+min-height: 500px;
+}
+/* FOOTER*/
+
+.footer{
+height: 100px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.derecha{
+color: #f3ff0b;
+}
+
